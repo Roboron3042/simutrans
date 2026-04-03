@@ -8,8 +8,10 @@
 #include "../utils/plainstring.h"
 #include "../dataobj/environment.h"
 #include "music.h"
-#ifndef _WIN32 && !defined __APPLE__ && !defined __ANDROID__
+#ifndef _WIN32
+#if !defined __APPLE__ && !defined __ANDROID__
 #include <SDL2/SDL.h>
+#endif
 #endif
 
 // fluidsynth music routine interfaces
