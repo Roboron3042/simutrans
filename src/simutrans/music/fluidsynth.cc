@@ -209,7 +209,7 @@ bool dr_init_midi()
 #elif defined(__ANDROID__) && __ANDROID__
 	std::string fluidsynth_driver = "oboe";
 #else
-	std::string fluidsynth_driver = "sdl3";
+	std::string fluidsynth_driver = "alsa";
 
 	if(  !SDL_WasInit(SDL_INIT_AUDIO)  ) {
 		if(  SDL_InitSubSystem( SDL_INIT_AUDIO ) != 0  ) {
