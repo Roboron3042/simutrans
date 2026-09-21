@@ -92,6 +92,9 @@ else ()
 	add_library(libopus SHARED IMPORTED)
 	set_target_properties(libopus PROPERTIES IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/../fluidsynth/lib/${CMAKE_ANDROID_ARCH_ABI}/libopus.so)
 
+	add_library(libsndfile SHARED IMPORTED)
+	set_target_properties(libsndfile PROPERTIES IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/../fluidsynth/lib/${CMAKE_ANDROID_ARCH_ABI}/libsndfile.so)
+
 	add_library(libvorbis SHARED IMPORTED)
 	set_target_properties(libvorbis PROPERTIES IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/../fluidsynth/lib/${CMAKE_ANDROID_ARCH_ABI}/libvorbis.so)
 
